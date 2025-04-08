@@ -1,0 +1,8 @@
+<h1>Список постов</h1>
+
+
+<div>
+  @for (post of posts(); track post.id) {
+  <app-post-item [title]="post.title" [userId]="post.userId"></app-post-item>
+  }
+</div>
