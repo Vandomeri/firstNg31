@@ -1,0 +1,18 @@
+<div>
+  <label for="">
+    <p>Введите количество рублей</p>
+    <input [(ngModel)]="rubles" type="number">
+  </label>
+
+  <div>
+    <p>Количество долларов: {{ dollars() | currency:'RON':'symbol-narrow' }}</p>
+  </div>
+
+  <div>
+    Курс актуален на {{now | date:'dd.MM.YYYY ----- Время: hh:mm'}}
+  </div>
+
+
+  <p>Размер файла: {{ fileSize | size:'KB' }}</p>
+
+</div>
